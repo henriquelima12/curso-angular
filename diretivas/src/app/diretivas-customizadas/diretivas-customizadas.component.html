@@ -1,0 +1,18 @@
+<h3>Diretivas customizadas</h3>
+
+<p appFundoAmarelo>Fundo amarelo</p>
+
+<button appFundoAmarelo>Botão com fundo amarelo</button>
+
+<p appHighlightMouse>Texto com highlight ao passar o mouse</p>
+
+<p [appHighlight]="'red'" [defaultColor]="'grey'">Texto com highlight com cores customizadas</p>
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos
+</div>
+<div *ngElse="mostrarCursos">
+  Não existem cursos para serem listados
+</div>
+
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>

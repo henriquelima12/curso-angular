@@ -1,0 +1,16 @@
+<section>
+  <article>
+    <h2>Two-Way Data Binding</h2>
+
+    <div>
+      <input type="text" [(ngModel)]="nome">
+      <p>Você digitou: {{ nome }}</p>
+    </div>
+
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
+      <p>Meu nome é {{ pessoa.nome }} e minha idade é {{ pessoa.idade }}</p>
+    </div>
+  </article>
+</section>
