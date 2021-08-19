@@ -1,0 +1,18 @@
+<nav *ngIf="mostrarMenu">
+  <div class="nav-wrapper">
+    <a routerLink="" class="brand-logo right">Logo</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="/cursos" [queryParams]="{pagina:1}">Cursos</a></li>
+      <!--<li routerLinkActive="active"><a [routerLink]="['curso', idCurso.value]">Curso com id</a></li>-->
+      <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <!--<p>Digite o id do curso:
+  <input type="text" #idCurso (input)="0"></p>-->
+  <router-outlet></router-outlet>
+</div>
