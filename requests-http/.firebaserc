@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "curso-angular-henrique": {
+      "hosting": {
+        "requests-http": [
+          "curso-angular-henrique"
+        ]
+      }
+    }
+  }
+}
